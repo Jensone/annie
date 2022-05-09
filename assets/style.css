@@ -1,0 +1,107 @@
+/* Reset CSS */
+* {
+    margin: 0; /* Remove margins */
+    padding: 0; /* removes default padding */
+    box-sizing: border-box; /* to make sure all elements are the same size */
+    list-style: none; /* remove list bullets */
+    text-decoration: none; /* remove underline */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root {
+    --purple: #5465FF;
+}
+
+/* Typo */
+h1, h2, .navigation a {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+.logo {
+    padding: 5px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_items {
+    padding: 0 5px;
+}
+
+.navigation_items a {
+    color: #101010
+}
+.navigation_items a svg {
+    color: var(--purple);
+}
+
+/* Value propostion */
+.value_proposition {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    width: 70%;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+
+.value_proposition_email {
+    width: 320px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+}
+
+.value_proposition_email input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.value_proposition_email input:focus {
+    outline: none;
+}
+
+.value_proposition_email button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    padding: 0 15px;
+    background-color: var(--purple);
+    color: #fff;
+}
+
+.value_proposition_email svg {
+    width: 20px;
+    padding-left: 5px;
+}
