@@ -5,12 +5,12 @@
     box-sizing: border-box; /* to make sure all elements are the same size */
     list-style: none; /* remove list bullets */
     text-decoration: none; /* remove underline */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* font family */
 }
 
 /* Variables */
 :root {
-    --purple: #5465FF;
+    --purple: #5465FF; 
 }
 
 /* Typo */
