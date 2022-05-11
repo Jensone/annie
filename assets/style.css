@@ -49,7 +49,7 @@ nav {
     width: 20px;
 }
 
-.navigation_items a {
+.navigation_items a, .side_menu_navigation_items a {
     color: #101010
 }
 .navigation_items:last-child a svg, .navigation_login a svg {
@@ -61,49 +61,61 @@ nav {
     padding: 0 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* Icon menu burger */
+.open_menu {
+    display: inherit;
+    z-index: 10;
+}
+.open_menu.active {
+    display: none;
+    z-index: 10;
+}
+/* Icon close menu */
+.close_menu {
+    display: none;
+    z-index: 10;
+}
+.close_menu.active {
+    display: inherit;
+    z-index: 10;
+}
+/* Side menu */
 .side_menu {
     height: 100vh;
     width: 0%;
     position: absolute;
+    top: 0;
     background-color: #ffffff;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
-    transition: 750ms ease-in-out;
+    transition: width 100ms ease-out;
     overflow: hidden;
 }
 
 .side_menu.active {
     width: 70%;
-    transition: width 750ms ease-in-out;
+    padding: 60px 20px;
+    transition: width 350ms ease-in;
     overflow: auto;
 }
 
+.side_menu_navigation {
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.side_menu_navigation_items {
+    padding: 20px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.signature {
+    text-align: center;
+    font-size: 0.7rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
 
 /* Value propostion */
 .value_proposition {
@@ -148,7 +160,7 @@ nav {
     outline: none;
 }
 
-.value_proposition_email button {
+.value_proposition_email button, .button_login {
     height: 40px;
     display: flex;
     align-items: center;
@@ -160,10 +172,9 @@ nav {
     color: #fff;
 }
 
-.value_proposition_email svg {
+.value_proposition_email svg, .button_login svg {
     width: 20px;
     padding-left: 5px;
-    transform: rotate(-25deg);
 }
 
 
